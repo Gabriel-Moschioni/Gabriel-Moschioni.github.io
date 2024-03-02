@@ -1,0 +1,120 @@
+.experience {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.experience .subtitulo {
+    color: #F6FFFE;
+    max-width: 5ch;
+    opacity: 0.6;
+}
+
+.experience-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #B9BFBE;
+}
+
+.experience-texto strong {
+    color: #F6FFFE;
+}
+
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #F6FFFE;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+    gap: 10px 20px;
+}
+
+.empresa-ano {
+    position: absolute;
+    top: 20px;
+    left: -80px;
+    color: #B9BFBE;
+    font-size: .875rem;
+    width: 60px;
+    text-align: right;
+}
+
+.empresa::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#8BC7CD,#37838A);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.empresa-titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+    color: #292830;
+}
+
+.empresa-texto {
+    font-size: 0.875rem;
+    color: #35343C;
+    line-height: 1.4;
+}
+
+.empresa-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.empresa-habilidades li {
+    font-size: .875rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    background: #E7E6ED;
+    color: #292830;
+    padding: 5px 10px;
+}
+
+@media (max-width: 850px) {
+    .experience {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experience-texto{
+        font-size: 1.25rem;
+        margin-bottom: 40px;
+    }
+
+    .experience .subtitulo {
+        max-width: none;
+    }
+
+    .empresa-ano{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+        color: #35343C;
+    }
+
+    .empresa-ano::before{
+        content: "Year: ";
+    }
+
+    .empresa {
+        grid-template-columns: 1fr;
+        gap: 10px 5px;
+    }
+}

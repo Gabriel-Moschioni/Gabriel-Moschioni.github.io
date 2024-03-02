@@ -1,0 +1,143 @@
+.education {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.education .subtitulo {
+    color: #F6FFFE;
+    max-width: 6ch;
+    opacity: 0.6;
+}
+
+.education-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #B9BFBE;
+}
+
+.education-texto strong {
+    color: #F6FFFE;
+}
+
+.education-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.faculdade {
+    flex: 1;
+    padding: 20px;
+    background: #F6FFFE;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+    gap: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faculdade-tipo {
+    font-size: 1.225rem;
+    line-height: 1.4;
+    color: #292830;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.faculdade-curso {
+    flex: 1;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #292830;
+    position: relative;
+}
+
+.faculdade-curso {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #292830;
+    position: relative;
+}
+
+.faculdade::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#8BC7CD,#37838A);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.languages{
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.languages h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.languages h3::before {
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url('../img/idiomas.svg');
+    position: absolute;
+    left: -36px;
+    top: -4px;
+}
+
+.languages li {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 850px) {
+    .education {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .education-texto{
+        font-size: 1.25rem;
+        margin-bottom: 40px;
+    }
+
+    .education-lista {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px 5px;
+    }
+
+    .education .subtitulo {
+        max-width: none;
+    }
+
+    .languages h3::before {
+        position: initial;
+        margin-bottom: 10px;
+    }
+
+}

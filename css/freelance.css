@@ -1,0 +1,121 @@
+.freelance {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.freelance a {
+    color: #543D46;
+    text-decoration: underline;
+    align-content: right;
+}
+
+.freelance .subtitulo {
+    color: #FAF6ED;
+    opacity: 0.6;
+}
+
+.freelance-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #B9BFBE;
+}
+
+.freelance-texto strong {
+    color: #FAF6ED;
+}
+
+.freela {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #FAF6ED;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+    gap: 10px 20px;
+}
+
+.freela-ano {
+    position: absolute;
+    top: 20px;
+    left: -80px;
+    color: #B9BFBE;
+    font-size: .875rem;
+    width: 60px;
+    text-align: right;
+}
+
+.freela::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#796945,#E3D1A7);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.freela-titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+    color: #292830;
+}
+
+.freela-texto {
+    font-size: 0.875rem;
+    color: #35343C;
+    line-height: 1.4;
+}
+
+.freela-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.freela-habilidades li {
+    font-size: .875rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    background: #E3D1A7;
+    color: #35343C;
+    padding: 5px 10px;
+}
+
+@media (max-width: 850px) {
+    .freelance {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .freelance-texto{
+        font-size: 1.25rem;
+        margin-bottom: 40px;
+    }
+
+    .freela-ano{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+        color: #35343C;
+    }
+
+    .freela-ano::before{
+        content: "Year: ";
+    }
+
+    .freela {
+        grid-template-columns: 1fr;
+        gap: 10px 5px;
+    }
+}
