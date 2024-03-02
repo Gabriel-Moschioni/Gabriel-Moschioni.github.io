@@ -1,46 +1,49 @@
 body {
-    margin: 0px;
-    font-family: 'Segoe UI';
-    background-color: #292830;
-    color: #B9BFBE;
+  margin: 0px;
+  font-family: "Poppins";
+  background-color: #292830;
+  color: #b9bfbe;
 }
 
-h1, h2, h3, p {
-    margin: 0px;
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
 }
 
 a {
-    text-decoration: none;
-    color: #F6FFFE;
+  text-decoration: none;
+  color: #f6fffe;
 }
 
 ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 strong {
-    color: #F6FFFE;
+  color: #f6fffe;
 }
 
 .subtitulo {
-    font-size: 8rem;
-    word-break: break-all;
-    line-height: 1;
-    text-transform: uppercase;
-    max-width: 4ch;
+  font-size: 8rem;
+  word-break: break-all;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 4ch;
 }
 
 @media (max-width: 850px) {
-    .subtitulo {
-        font-size: 3rem;
-        text-transform: capitalize;
-        max-width: initial;
-    }
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
 }
